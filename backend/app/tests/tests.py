@@ -1,10 +1,8 @@
 import sys
 import os
 
-# Adiciona o diretório 'app' ao sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Agora o import deve funcionar
 from game_logic import generate_dominoes, deal_hands, valid_move
 def test_generate_dominoes():
     dominoes = generate_dominoes()
